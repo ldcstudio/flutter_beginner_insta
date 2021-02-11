@@ -1,5 +1,5 @@
 name: flutter_beginner_insta
-description: Build the Instagram Home Screen using Level 1 Widgets in Flutter.
+description: Creating the Instagram Home Screen in Flutter using Level 1 Widgets.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
