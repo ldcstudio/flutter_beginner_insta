@@ -28,9 +28,24 @@ class InstaHomePage extends StatelessWidget {
       child: Column(
         children: [
           InstaAppBar(),
-          InstaStories(),
           Expanded(
-            child: InstaPost(),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  InstaStories(),
+                  InstaPost(
+                    profileAsset: 'benjeeman.jpg',
+                    postAsset: 'chaseemmons_post.jpg',
+                    username: 'Benjeeman',
+                  ),
+                  InstaPost(
+                    profileAsset: 'empproductions.jpg',
+                    postAsset: 'fodelwdc_post.jpg',
+                    username: 'Empproductions',
+                  ),
+                ],
+              ),
+            ),
           ),
           InstaBottomNavigation(),
         ],

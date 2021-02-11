@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
 class InstaPost extends StatelessWidget {
+  final String profileAsset;
+  final String postAsset;
+  final String username;
+
+  InstaPost({this.profileAsset, this.postAsset, this.username});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -15,7 +21,7 @@ class InstaPost extends StatelessWidget {
             ],
           ),
         ),
-        Image.asset('assets/chaseemmons_post.jpg'),
+        Image.asset('assets/' + postAsset),
       ],
     );
   }
@@ -24,12 +30,12 @@ class InstaPost extends StatelessWidget {
     return Row(
       children: [
         CircleAvatar(
-          backgroundImage: AssetImage('assets/benjeeman.jpg'),
+          backgroundImage: AssetImage('assets/' + profileAsset),
           radius: 16.0,
         ),
         SizedBox(width: 8.0),
         Text(
-          'Benjeeman',
+          username,
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ],
