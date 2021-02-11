@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Beginner Insta',
+      debugShowCheckedModeBanner: false,
       home: InstaHomePage(),
     );
   }
@@ -28,7 +29,9 @@ class InstaHomePage extends StatelessWidget {
         children: [
           InstaAppBar(),
           InstaStories(),
-          InstaPost(),
+          Expanded(
+            child: InstaPost(),
+          ),
           InstaBottomNavigation(),
         ],
       ),
