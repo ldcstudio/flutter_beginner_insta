@@ -28,7 +28,9 @@ class InstaHomePage extends StatelessWidget {
         children: [
           InstaAppBar(),
           InstaStories(),
-          InstaPost(),
+          Expanded(
+            child: InstaPost(),
+          ),
           InstaBottomNavigation(),
         ],
       ),
