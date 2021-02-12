@@ -8,7 +8,7 @@ Some useful resources can be found [here](https://drive.google.com/drive/folders
 
 ## What Are Level 1 Widgets?
 
-Level 1 Widgets can be used to build **any** App in Flutter:
+Level 1 Widgets are a subset of Flutter Widgets that can be used to create **any** User Interface (UI) in Flutter:
 * Container
 * Row
 * Column
@@ -16,14 +16,15 @@ Level 1 Widgets can be used to build **any** App in Flutter:
 * Image
 * Text
 
-## MockApps Screenshots
+## Screenshot
 
 <p align="center">
-  <img src="screenshots/instagram.png" width="256" hspace="4">
+  <img src="screenshots/instagram_01.png" width="256" hspace="16">
+  <img src="screenshots/instagram_02.png" width="256" hspace="16">
 </p>
 
 ## Extra Resources
 
-Widgets: Visit the [Flutter API Documentation](https://api.flutter.dev/) for a complete list of Widgets.
+Visit the Flutter API Documentation to [learn more](https://api.flutter.dev/).
 
-MockApps: Create your own [Flutter Beginner MockApps](https://github.com/Jensen098/flutter_beginner_mockapps).
+Continue to create your own [Flutter Beginner MockApps](https://github.com/Jensen098/flutter_beginner_mockapps).
