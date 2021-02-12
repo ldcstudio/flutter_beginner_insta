@@ -1,30 +1,14 @@
 # Flutter Beginner Insta
 
-Create the Instagram Home Screen in Flutter using Level 1 Widgets.
+Create the Instagram Home Screen in Flutter using [Level 1 Widgets](https://docs.google.com/document/d/1dWFiGKUFVATSy-y_Il7X9S_d2_9IHJyfx_i_f6wPJOk/edit?usp=sharing).
 
-## Resources
+## Wiki
 
-Some useful resources can be found [here](https://drive.google.com/drive/folders/1n7szUDgfhIgOleX4EPMrBAKBpNPO4NyD?usp=sharing).
+Visit the wiki page to [get started](https://github.com/ldc-studio/flutter_beginner_insta/wiki).
 
-## What Are Level 1 Widgets?
-
-Level 1 Widgets are a subset of Flutter Widgets that can be used to create **any** User Interface (UI) in Flutter:
-* Container
-* Row
-* Column
-* Icon
-* Image
-* Text
-
-## Screenshot
+## Screenshots
 
 <p align="center">
   <img src="screenshots/instagram_01.png" width="256" hspace="16">
   <img src="screenshots/instagram_02.png" width="256" hspace="16">
 </p>
-
-## Extra Resources
-
-Visit the Flutter API Documentation to [learn more](https://api.flutter.dev/).
-
-Continue to create your own [Flutter Beginner MockApps](https://github.com/Jensen098/flutter_beginner_mockapps).
