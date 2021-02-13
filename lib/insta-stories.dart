@@ -18,7 +18,7 @@ class InstaStories extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               Text(
-                'Watch All',
+                '▶ Watch All',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ],
