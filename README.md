@@ -4,11 +4,26 @@ Create the Instagram Home Screen in Flutter using [Level 1 Widgets](https://docs
 
 ## Wiki
 
-Visit the wiki page to [get started](https://github.com/ldc-studio/flutter_beginner_insta/wiki).
+Visit the wiki page for a step-by-step tutorial including:
+
+Getting Started
+* [Overview](https://github.com/ldc-studio/flutter_beginner_insta/wiki)
+* [Getting Started](https://github.com/ldc-studio/flutter_beginner_insta/wiki/Getting-Started)
+* [UI Breakdown](https://github.com/ldc-studio/flutter_beginner_insta/wiki/UI-Breakdown)
+
+Tutorial
+* [Part 1: Insta AppBar](https://github.com/ldc-studio/flutter_beginner_insta/wiki/Part-1:-Insta-AppBar)
+* [Part 2: Insta Stories](https://github.com/ldc-studio/flutter_beginner_insta/wiki/Part-2:-Insta-Stories)
+* [Part 3: Insta Post](https://github.com/ldc-studio/flutter_beginner_insta/wiki/Part-3:-Insta-Post)
+* [Part 4: Insta Bottom Navigation](https://github.com/ldc-studio/flutter_beginner_insta/wiki/Part-4:-Bottom-Navigation)
 
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/instagram_01.png" width="256" hspace="16">
-  <img src="screenshots/instagram_02.png" width="256" hspace="16">
+  <img src="screenshots/instagram_01.png" width="256" hspace="16" vspace="16">
+  <img src="screenshots/instagram_02.png" width="256" hspace="16" vspace="16">
 </p>
+
+## Complete Solution
+
+Please refer to the _complete-flutter-beginner-insta_ branch for the complete solution. 
