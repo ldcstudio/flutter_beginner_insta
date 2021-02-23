@@ -4,7 +4,7 @@ Create the Instagram Home Screen in Flutter using [Level 1 Widgets](https://docs
 
 ## Wiki
 
-Visit the wiki page for a step-by-step tutorial including:
+Visit the project wiki for a step-by-step guide to building your first Flutter app including:
 
 Getting Started
 * [Overview](https://github.com/ldc-studio/flutter_beginner_insta/wiki)
