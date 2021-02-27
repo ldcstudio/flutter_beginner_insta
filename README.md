@@ -16,6 +16,7 @@ Tutorial
 * [Part 2: Insta Stories](https://github.com/ldc-studio/flutter_beginner_insta/wiki/Part-2:-Insta-Stories)
 * [Part 3: Insta Post](https://github.com/ldc-studio/flutter_beginner_insta/wiki/Part-3:-Insta-Post)
 * [Part 4: Insta Bottom Navigation](https://github.com/ldc-studio/flutter_beginner_insta/wiki/Part-4:-Bottom-Navigation)
+* [Complete Solution](https://github.com/ldcstudio/flutter_beginner_insta/wiki/Complete-Solution)
 
 ## Screenshots
 
@@ -26,4 +27,4 @@ Tutorial
 
 ## Complete Solution
 
-Please refer to the _complete-flutter-beginner-insta_ branch for the complete solution. 
+Complete Solution available on the _complete-flutter-beginner-insta_ branch. 
