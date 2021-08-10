@@ -1,0 +1,96 @@
+import 'package:flutter/material.dart';
+
+class InstagramStories extends StatelessWidget {
+  final String _instagramProfileUrl01 =
+      "https://raw.githubusercontent.com/ldcstudio/flutter_beginner_insta/main/assets/benjeeman.jpg";
+  final String _instagramProfileUrl02 =
+      "https://raw.githubusercontent.com/ldcstudio/flutter_beginner_insta/main/assets/huseyintopcu.jpg";
+  final String _instagramProfileUrl03 =
+      "https://raw.githubusercontent.com/ldcstudio/flutter_beginner_insta/main/assets/botanicalnature.jpg";
+  final String _instagramProfileUrl04 =
+      "https://raw.githubusercontent.com/ldcstudio/flutter_beginner_insta/main/assets/empproductions.jpg";
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(
+        horizontal: 16.0,
+        vertical: 8.0,
+      ),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'Stories',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              Text(
+                '▶ Watch All',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              _buildInstaStory(
+                profileAsset: _instagramProfileUrl01,
+                username: 'Your Story',
+              ),
+              _buildInstaStory(
+                profileAsset: _instagramProfileUrl02,
+                username: 'huseyintopcu',
+              ),
+              _buildInstaStory(
+                profileAsset: _instagramProfileUrl03,
+                username: 'botanicalnature',
+              ),
+              _buildInstaStory(
+                profileAsset: _instagramProfileUrl04,
+                username: 'empproduct',
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Container _buildInstaStory({
+    required String profileAsset,
+    required String username,
+  }) {
+    return Container(
+      padding: EdgeInsets.symmetric(vertical: 8.0),
+      child: Column(
+        children: [
+          CircleAvatar(
+            backgroundImage: NetworkImage(profileAsset),
+            radius: 32.0,
+          ),
+          SizedBox(height: 6.0),
+          Text(username),
+        ],
+      ),
+    );
+  }
+}
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Beginner Insta',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+      home: Scaffold(body: InstagramStories()),
+    );
+  }
+}

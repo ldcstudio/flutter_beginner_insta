@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+
+class InstagramAppBar extends StatelessWidget {
+  final double _appBarHeight = 56.0;
+  final String _appBarInstaLogoUrl =
+      "https://raw.githubusercontent.com/ldcstudio/flutter_beginner_insta/main/assets/instagram_logo_text.png";
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.white,
+      height: _appBarHeight,
+      padding: EdgeInsets.all(16.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Icon(Icons.camera_alt),
+          Image.network(_appBarInstaLogoUrl),
+          Icon(Icons.send)
+        ],
+      ),
+    );
+  }
+}
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Beginner Insta',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+      home: Scaffold(body: InstagramAppBar()),
+    );
+  }
+}

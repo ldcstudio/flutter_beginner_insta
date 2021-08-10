@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+
+class InstagramBottomNavigation extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.bottomCenter,
+      padding: EdgeInsets.symmetric(
+        horizontal: 24.0,
+        vertical: 16.0,
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Icon(Icons.home_filled),
+          Icon(Icons.search),
+          Icon(Icons.add_circle_outline),
+          Icon(Icons.favorite_border),
+          Icon(Icons.person_outline),
+        ],
+      ),
+    );
+  }
+}
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Beginner Insta',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+      home: Scaffold(body: InstagramBottomNavigation()),
+    );
+  }
+}

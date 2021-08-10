@@ -1,0 +1,77 @@
+import 'package:flutter/material.dart';
+
+class InstagramPost extends StatelessWidget {
+  final String profileAsset;
+  final String postAsset;
+  final String username;
+
+  InstagramPost({
+    required this.profileAsset,
+    required this.postAsset,
+    required this.username,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          padding: EdgeInsets.all(16.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              _buildProfileUsername(),
+              Icon(Icons.more_horiz),
+            ],
+          ),
+        ),
+        Image.network(postAsset),
+      ],
+    );
+  }
+
+  Row _buildProfileUsername() {
+    return Row(
+      children: [
+        CircleAvatar(
+          backgroundImage: NetworkImage(profileAsset),
+          radius: 16.0,
+        ),
+        SizedBox(width: 8.0),
+        Text(
+          username,
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ],
+    );
+  }
+}
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    final String _instagramPostUrl =
+        "https://raw.githubusercontent.com/ldcstudio/flutter_beginner_insta/main/assets/chaseemmons_post.jpg";
+    final String _instagramProfileUrl =
+        "https://raw.githubusercontent.com/ldcstudio/flutter_beginner_insta/main/assets/benjeeman.jpg";
+    final String _instagramUsername = "Benjeeman";
+
+    return MaterialApp(
+      title: 'Flutter Beginner Insta',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+      home: Scaffold(
+        body: InstagramPost(
+          profileAsset: _instagramProfileUrl,
+          postAsset: _instagramPostUrl,
+          username: _instagramUsername,
+        ),
+      ),
+    );
+  }
+}
